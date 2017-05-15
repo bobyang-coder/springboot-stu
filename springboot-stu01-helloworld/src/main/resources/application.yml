@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  datasource: #数据库链接属性
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/girl?characterEncoding=utf8&useSSL=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      #create：程序每次启动都会重新创建表，如果有的话会先删掉再创建
+      #create-drop：前一半跟create一样，但是再应用停止的时候会删掉表
+      #none：启动的时候不做任何操作
+      #update：第一次启动会创建表，但是如果有了的话就不创建了
+      #validate：启动的时候会拿实体和数据库对比，不一样会启动报错
+    show-sql: true #控制台打印sql
+  #AOP
+  aop:
+    auto: true
+    proxy-target-class: false
+

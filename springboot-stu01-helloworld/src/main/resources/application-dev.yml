@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  context-path: /
+
+name: dev
+age:  18
+content:  "{name:${name},age:${age}}"
+
+# 对象
+girl:
+  name: dev
+  age:  18
