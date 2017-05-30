@@ -1,0 +1,12 @@
+#为该starter默认设置参数，如果需要修改此配置，可在自己项目的application文件中定义参数值
+#Redis默认配置
+jedis :
+  host : 127.0.0.1
+  port : 6379
+  password : 123456
+  max-total: 100
+  max-idle: 8
+  max-wait-millis : 100000
+#服务器默认端口
+server :
+  port : 8088
